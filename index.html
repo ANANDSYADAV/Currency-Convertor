@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Convertor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <img src="just logo.jpg" alt="AppLogo">
+    <!-- img link => https://banner2.cleanpng.com/20180417/plq/kisspng-currency-converter-foreign-exchange-market-exchang-calculator-5ad63fa4f35543.4383363415239904369967.jpg -->
+
+    <div class="logo">My Currency Converter</div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/guide">User Guide</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <h1>Lets convert currencies</h1>
+
+    <!-- <input type="button" name="form1" id="btn1" value="To one currency">
+        <input type="button" name="form2" id="btn2" value="To all currencies"> -->
+
+    <form action="/action.php" method="get">
+      <label for="currency">Choose base currency: </label>
+      <select name="currency">
+        <option value="INR">Indian Rupee</option>
+        <option value="USD">US Dollar</option>
+        <option value="EUR">Euro</option>
+      </select>
+      <label for="quantity">Choose a quantity: </label>
+      <input type="number" name="quantity" min="1" max="10">
+      <button class="btn" type="submit">Convert</button>
+    </form>
+
+    <div class="output">
+      <h1>Here is the converted values in different currencies</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Code</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <br><br>
+  <footer>
+    Copyright © All rights reserved
+  </footer>
+  <br>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
